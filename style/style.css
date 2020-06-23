@@ -17,9 +17,10 @@ html {
 }
 .container{
     max-width: 800px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 20px;
     background-color: #ffffff;
+    border: 2px solid #000;
 }
 .exchangeRates{
     display: inline-block;
