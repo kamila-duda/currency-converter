@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przelicznik walut</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="style/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;800&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="body">
+    <main class="container">
+        <header>
+            <h1>Przelicznik walut</h1>
+            <p>Podaj ile potrzebujesz lub posiadasz gotówki, a nastepnie nasz kalkulator obliczy ile dostaniesz w wybranej przez
+                Ciebie walucie.</p>
+        </header>
+        <section class="exchangeRates">
+            <table class="exchangeRates__table">
+                <caption class="table__title">Kurs wymiany walut z dnia: 16.06.2020r</caption>
+                <tr class="table__row">
+                    <th class="table__heading" scope="col">Waluta</th>
+                    <th class="table__heading" scope="col">Kurs w PLN</th>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__cell"><img class="table__image" src="https://i.ibb.co/9sLpkpS/euro.png">EUR</td>
+                    <td class="table__cell js-eur">4.45</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__cell"><img class="table__image" src="https://i.ibb.co/7KGVPHp/usa.png">USD</td>
+                    <td class="table__cell js-usd">3.96</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__cell"><img class="table__image" src="https://i.ibb.co/6msQtYz/gb.png">GBP</td>
+                    <td class="table__cell js-gbp">4.97</td>
+                </tr>
+            </table>
+        </section>
+        <section class="currencyConverter">
+            <form class="currencyConverter__form js-currencyConverter__form">
+                <fildset>
+                    <p class="form__row">
+                        <span class="form__inputMark">Mam:</span>
+                        <input class="form__field js-amount" type="number" min="1" required autofocus>
+                    
+                            <select class="form__select js-form__selectFirst" name="firstOption">
+                                <option value="pln">PLN</option>
+                                <option value="eur">EUR</option>
+                                <option value="usd">USD</option>
+                                <option value="gbp">GBP</option>
+                            </select></p>
+                            <p class="form__row">
+                        <span class="form__inputMark">Na:</span>
+                            <select class="form__select js-form__selectSecond" name="secondOption">
+                                <option value="pln">PLN</option>
+                                <option value="eur">EUR</option>
+                                <option value="usd">USD</option>
+                                <option value="gbp">GBP</option>
+                            </select>
+                        <button class="form__button js-form__button">Przelicz</button>
+                    </p>
+                </fildset>
+            </form>
+            <p class="currencyConverter__result js-currencyConverter__result"></p>
+        </section>
+    </main>
+    <footer class="footer">
+        Kamila Duda &quot; Wszelkie prawa zastrzeżone
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+.body{
+    font-family: 'Muli', sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    background-image: url("https://i.ibb.co/vjNBpQQ/bg.jpg");
+    background-size: cover;
+}
+.container{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+.exchangeRates{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.exchangeRates__table{
+    border-collapse: collapse; 
+    width: 250px;
+    font-size: 15px;
+}
+.table__title{
+    font-size: 13px;
+}
+.table__row, .table__heading, .table__cell{
+    border: 2px solid #000;
+    padding: 5px;
+}
+.table__heading{
+    background-color: #8a2be2;
+    color: #fff;
+}
+.table__image{
+    width: 60px;
+    margin: 0 auto;
+    display: block;
+}
+.table__cell{
+    background-color: #faf0c2;
+    font-weight: 700;
+    
+}
+.currencyConverter__form{
+    max-width: 350px;
+    margin: 20px auto;
+}
+.form__field, .form__select, .form__inputMark{
+padding: 10px;
+border-radius: 10px;
+outline: none;
+border: 2px solid #8a2be2;
+font-size: 14px;
+width: 90px;
+
+display: inline-block;
+}
+.form__inputMark{
+    color: #fff;
+    background-color: #8a2be2;
+}
+.form__button{
+    background-color: #8a2be2;
+    outline: none;
+    border: 2px solid #8a2be2;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 90px;
+    text-transform: uppercase;
+}
+.currencyConverter__result{
+    font-weight: bold;
+    color: #8a2be2;
+    height: 20px;
+    padding-bottom: 30px;
+}
+.footer{
+    font-size: 12px;
+    background-color: #8a2be2;
+    color: #fff;
+}
