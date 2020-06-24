@@ -1,10 +1,10 @@
 {
     const choseCurency = (selected) => {
-        let currency = 1
+        let currency = 1;
         if(selected!=="pln") {
              currency = Number(document.querySelector(".js-"+selected).innerHTML);
         }
-        return currency
+        return currency;
     }
     const calculate = () => {
         const selectFirst = document.querySelector(".js-form__selectFirst");
