@@ -15,11 +15,11 @@ A simple currency converter. Enter the amount and select what currency it is. Ne
 ## Technologies
 * Html
 * Css
-* Java Script
+* JavaScript
 
 code snippet
 ```javascript
-const choseCurency = (selected) => {
+    const choseCurency = (selected) => {
         let currency = 1
         if(selected!=="pln") {
              currency = Number(document.querySelector(".js-"+selected).innerHTML);
